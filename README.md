@@ -1,4 +1,4 @@
-# DGSW-API Starter Kit
+# DGSW-API Starter Kits
 
 대구소프트웨어 고등학교에서 앱 개발 입문자를 위한 API 모음 입니다.  
 다음 API가 포함되어 있습니다.
