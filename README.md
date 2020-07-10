@@ -1,14 +1,16 @@
 # DGSW-API Starter Kit
 
-대구소프트웨어 고등학교에서 앱 개발 입문자를 위한 API 모음 입니다.
-
+대구소프트웨어 고등학교에서 앱 개발 입문자를 위한 API 모음 입니다.  
 다음 API가 포함되어 있습니다.
 - 급식 API
 - 시간표 API
 - 학사일정 API
 - 동네시간별예보 API
-# 테스트 
+
+예제들
+===
 급식 받기
+---
 ```python
 try:
     mod_mealinfo.set_date(2019, 12)
@@ -31,8 +33,8 @@ try:
 except Exception as e:
     print('Faield to load MealInfo %s' % str(e))
 ```
-
 시간표 받기
+---
 ```python
 try:
     mod_classinfo.set_date(2019, 12, 10)# 2019년 12월 10일의 시간표를 불러옴
@@ -46,6 +48,7 @@ except Exception as e:
     print('Faield to load ClassInfo %s' % str(e))
 ```
 학사일정 받기
+---
 ```python
 try:
     mod_eventinfo.load()
@@ -60,6 +63,7 @@ except Exception as e:
     print('Faield to load EventInfo %s' % str(e))
 ```
 동네시간별예보 받기
+---
 ```python
 try:
     mod_weather.get()
@@ -77,7 +81,8 @@ except Exception as e:
     print('Faield to load WeatherInfo %s' % str(e))
 ```
 
-## config.json
+config.json 작성법
+---
 
 ```json
 {
@@ -92,6 +97,8 @@ except Exception as e:
 }
 ```
 
-[OpenApiKey 발급 받기](https://open.neis.go.kr/portal/guide/actKeyPage.do)
+참조
+===
 
+[OpenApiKey 발급 받기](https://open.neis.go.kr/portal/guide/actKeyPage.do)  
 [KMA-Weather-Api 지역번호 구하기](http://www.weather.go.kr/weather/lifenindustry/sevice_rss.jsp)
